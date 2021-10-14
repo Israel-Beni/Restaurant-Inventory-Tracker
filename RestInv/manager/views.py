@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from .models import Ingredient, MenuItems, Customer, Purchase
 from django.views.generic import ListView
-from .forms import IngredientCreateForm
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from .forms import IngredientCreateForm, MenuItemsCreateForm, CustomerCreateForm, PurchaseCreateForm
 
 # Create your views here.
 
@@ -26,3 +27,19 @@ class CustomerList(ListView):
 class PurchaseList(ListView):
     model = Purchase
     template_name = "manager/lists/purchases.html"
+
+# Models creation
+class IngredientCreate(CreateView):
+    model = Ingredient
+    template_name = 'manager/model_creation_forms/add_ingredient.html'
+    form_class = IngredientCreateForm
+
+class MenuItemsCreate(CreateView):
+    model = MenuItems
+    template_name = 'manager/model_creation_forms/add_menu_item.html'
+    form_class = MenuItemsCreateForm
+
+class CustomerCreate(CreateView):
+    model = Customer
+    template_name = 'manager/model_creation_forms/add_customer.html'
+    form_class = CustomerCreateForm
