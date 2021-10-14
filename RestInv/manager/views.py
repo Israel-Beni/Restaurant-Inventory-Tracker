@@ -3,6 +3,7 @@ from .models import Ingredient, MenuItems, Customer, Purchase
 from django.views.generic import ListView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .forms import IngredientCreateForm, MenuItemsCreateForm, CustomerCreateForm, PurchaseCreateForm
+from .forms import IngredientUpdateForm, MenuItemsUpdateForm, CustomerUpdateForm
 
 # Create your views here.
 
@@ -43,3 +44,19 @@ class CustomerCreate(CreateView):
     model = Customer
     template_name = 'manager/model_creation_forms/add_customer.html'
     form_class = CustomerCreateForm
+
+# Models Update
+class IngredientUpdate(UpdateView):
+    model = Ingredient
+    template_name = 'manager/model_update_forms/update_ingredient.html'
+    form_class = IngredientUpdateForm
+
+class MenuItemsUpdate(UpdateView):
+    model = MenuItems
+    template_name = 'manager/model_update_forms/update_menu_item.html'
+    form_class = MenuItemsUpdateForm
+
+class CustomerUpdate(UpdateView):
+    model = Customer
+    template_name = 'manager/model_update_forms/update_customer.html'
+    form_class = CustomerUpdateForm
