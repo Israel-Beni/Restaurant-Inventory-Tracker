@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 django = "*"
+shortcuts = "*"
+"django.shortcuts" = "*"
 
 [dev-packages]
 

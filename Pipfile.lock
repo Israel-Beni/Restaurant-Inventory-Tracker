@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "c36ae28fea7b9a4cc02145632e2f41469af2e7b38b801903abb8333d3306f36b"
+            "sha256": "37664b604fe7dee8200997c0e1a0cbbfdc9e78f6cecb77316eaec3c5468c86c2"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -32,12 +32,26 @@
             "index": "pypi",
             "version": "==3.2.8"
         },
+        "django.shortcuts": {
+            "hashes": [
+                "sha256:eac6f9e2f4acdba3856046405c21382d36b66414bcd14c390f6027ac15f28ca8"
+            ],
+            "index": "pypi",
+            "version": "==1.6"
+        },
         "pytz": {
             "hashes": [
                 "sha256:3672058bc3453457b622aab7a1c3bfd5ab0bdae451512f6cf25f64ed37f5b87c",
                 "sha256:acad2d8b20a1af07d4e4c9d2e9285c5ed9104354062f275f3fcd88dcef4f1326"
             ],
             "version": "==2021.3"
+        },
+        "shortcuts": {
+            "hashes": [
+                "sha256:923ebdb4ccb0e2d7b8f8403a023ff525b3fc72477e662bcbf9cb21277c6d0a07"
+            ],
+            "index": "pypi",
+            "version": "==0.11.0"
         },
         "sqlparse": {
             "hashes": [
@@ -46,6 +60,14 @@
             ],
             "markers": "python_version >= '3.5'",
             "version": "==0.4.2"
+        },
+        "toml": {
+            "hashes": [
+                "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b",
+                "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f"
+            ],
+            "markers": "python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+            "version": "==0.10.2"
         }
     },
     "develop": {}
